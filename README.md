@@ -1,5 +1,5 @@
 # Comprehensive Character Sheet
-==================================
+================================
 The idea behind this project is to compile at least one sheet to be completely use friendly for tabletop gamers. Rather than having a character sheet, a set of dice or an online dice roller, and a full understanding of the logic, math, and nuances of rolling, this sheet represents the unification of those aspects, allowing new players to be able to focus more on the gameplay rather than working out whether or not to add one aspect of the sheet to a roll.
 
 The ultimate goal is to develop a sheet based upon the actual game and the version chosen by the user, allow the user to input their desired stats (with on-screen readout keeping track of alloted skill points and attribute distribution!), having the input of each attribute and skill register in the base algorithm, and ultimately allowing the user to click the attribute/skill/initiative/BAB etc label on the sheet to generate an in-browser window with the calculated value of rolling the apporpriate number of appropriate-sided dice with all contributing factors, including damage issues and afflictions. 
