@@ -35,14 +35,14 @@
 <p>The idea behind this project is to compile at least one sheet to be completely use friendly for tabletop gamers. Rather than having a character sheet, a set of dice or an online dice roller, and a full understanding of the logic, math, and nuances of rolling, this sheet represents the unification of those aspects, allowing new players to be able to focus more on the gameplay rather than working out whether or not to add one aspect of the sheet to a roll.</p>
 <p>The ultimate goal is to develop a sheet based upon the actual game and the version chosen by the user, allow the user to input their desired stats (with on-screen readout keeping track of alloted skill points and attribute distribution!), having the input of each attribute and skill register in the base algorithm, and ultimately allowing the user to click the attribute/skill/initiative/BAB etc label on the sheet to generate an in-browser window with the calculated value of rolling the apporpriate number of appropriate-sided dice with all contributing factors, including damage issues and afflictions. </p>
 <h3>
-<a id="build-a-sheet" class="anchor" href="#build-a-sheet" aria-hidden="true"><span class="octicon octicon-link"></span></a> THE Sheet </h3>
+<a id="build-a-sheet" class="anchor" href="#build-a-sheet" aria-hidden="true"><span class="octicon octicon-link"></span></a> The First (Basic) Sheet </h3>
 <p> For now, we're going to use a basic character sheet, without game or version denomination. With more updates, the choices of sheets will increase as the editor gets more and more familiar with the rules of each version and game. </p>
 <table>
   <tr>
     <td>Name:</td>
-    <td id ="name"></td>
+    <td id ="name"><form id="name"></td></form>
     <td>Class:</td>
-    <td id ="class"></td>
+    <td id ="class"><form id="class"></td></form>
     <td>Level:</td>
     <td id ="level"></td>
   </tr>
@@ -55,6 +55,7 @@
     <td id ="size"></td>
     <td>Age:</td>
     <td id ="age"></td>
+    <td></td>
     <td>Gender:</td>
     <td id ="gender"></td>
   </tr>
@@ -62,13 +63,20 @@
     <td>Total HP:</td>
     <td id="hpTotal"></td>
     <td>Current HP:</td>
-    <td id="curHP">/<td>
+    <td id="curHP"></td>
+    <td>AC:</td>
+    <td id="acTotal"></td>
     <td>TouchAC:</td>
     <td id="TaC"></td>
     <td> Flat-Footed AC:</td>
     <td id="FlatAC"></td>
     <td>Speed:</td>
     <td id="speed"></td>
+  </tr>
+
+  <tr>
+    <td>Initiative:</td>
+    <td id="totalInit"></td>
   </tr>
 
   <tr>
@@ -112,16 +120,6 @@
     <td></td>
     <td></td>
     <td></td>
-  </tr>
-
-  <tr>
-    <td>AC:</td>
-    <td id="acTotal"></td>
-  </tr>
-
-  <tr>
-    <td>Initiative:</td>
-    <td id="totalInit"></td>
   </tr>
 
   <tr>
